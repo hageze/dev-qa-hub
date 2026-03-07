@@ -1,10 +1,9 @@
-# Задача: Размножение n
-# Вычисление суммы n + nn + nnn
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
 
-n = int(input())
-
-n1 = n
-n2 = n * 10 + n
-n3 = n * 100 + n * 10 + n
-
-print(n1 + n2 + n3)
+if (x1 - x2)**2 == (y1 - y2)**2:
+    print('YES')
+else:
+    print('NO')
