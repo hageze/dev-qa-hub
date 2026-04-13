@@ -1,3 +1,3 @@
 # Dev QA Hub
 
-Репозиторий для хранения учебных проектов и скриптов по автоматизации тестирования на Python.
+A repository for educational projects and Python test automation scripts.
