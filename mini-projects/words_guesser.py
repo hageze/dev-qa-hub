@@ -5,10 +5,8 @@ word_list = [
     'СКРИПТ', 'ИНТЕРФЕЙС', 'ТЕСТИРОВЩИК', 'АЛГОРИТМ', 'КОНСТАНТА', 'ФУНКЦИЯ'
 ]
 
-
 def get_word():
     return random.choice(word_list).upper()
-
 
 def display_hangman(tries):
     stages = [
@@ -78,7 +76,6 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-
 def play(word):
     word_completion = '_' * len(word)
     guessed = False
@@ -130,6 +127,11 @@ def play(word):
         print(display_hangman(0))
         print(f'Вы проиграли. Загаданное слово было: {word}')
 
+# Создаем точку входа
+def main():
+    word = get_word()
+    play(word)
 
+# Запускаем программу
 if __name__ == "__main__":
-    play(get_word())
+    main()
